@@ -48,15 +48,15 @@ theme:
   language: 'zh'
 
 plugins:
-  - git-revision-date:
-      enabled_if_env: CI
+  - git-revision-date
+      #enabled_if_env: CI
   - git-revision-date-localized:
       type: date
   - search:
       lang: ja
 extra:
   social:
-    - icon: fontawesome/brands/github-alt  # 在新版里type已废弃(感谢HuJialun的反馈)
+    - icon: fontawesome/brands/github-alt
       link: https://github.com/fengchenzxc
 
 
@@ -357,6 +357,8 @@ nav:
       - Saltstack:
         - SaltStack 未授权访问命令执行漏洞 CVE-2020-16846 25592: 漏洞复现/服务器应用漏洞/Saltstack/SaltStack 未授权访问命令执行漏洞 CVE-2020-16846 25592.md
         - Saltstack 远程命令执行漏洞 CVE-2020-11651 11652: 漏洞复现/服务器应用漏洞/Saltstack/Saltstack 远程命令执行漏洞 CVE-2020-11651 11652.md
+      - smartBi:  
+        - smartBi总结: 漏洞复现/服务器应用漏洞/smartBi/smartBi总结.md
       - VMware:
         - VMware vCenter任意文件读取漏洞: 漏洞复现/服务器应用漏洞/VMware/VMware vCenter任意文件读取漏洞.md
         - VMware vRealize Operations Manager SSRF漏洞 CVE-2021-21975: 漏洞复现/服务器应用漏洞/VMware/VMware vRealize Operations Manager SSRF漏洞 CVE-2021-21975.md
@@ -466,12 +468,19 @@ nav:
     - 第07章：恶意样本库: 应急响应/第07章：恶意样本库/README.md
 
   - 安全工具:
+    - 相关介绍: 安全工具/README.md
     - Apache Struts2:
-      - 扫描工具 Exphub-Strtus2.md: 漏洞复现/Web服务器漏洞/Apache/Apache Struts2/Scan/扫描工具 Exphub-Strtus2.md
-      - 扫描工具 Struts2-Scan: 漏洞复现/Web服务器漏洞/Apache/Apache Struts2/Scan/扫描工具 Struts2-Scan.md
+      - 扫描工具 Exphub-Strtus2.md: 安全工具/Apache Struts2/Scan/扫描工具 Exphub-Strtus2.md
+      - 扫描工具 Struts2-Scan: 安全工具/Apache Struts2/Scan/扫描工具 Struts2-Scan.md
     - JBOSS:
-      - 扫描工具 Jexboss: 漏洞复现/Web服务器漏洞/Jboss/Scan/扫描工具 Jexboss.md
+      - 扫描工具 Jexboss: 安全工具/JBOSS/Scan/扫描工具 Jexboss.md
     - Weblogic:
-      - 扫描工具 WeblogicScanner: 漏洞复现/Web服务器漏洞/Weblogic/Scan/扫描工具 WeblogicScanner.md
+      - 扫描工具 WeblogicScanner: 安全工具/Weblogic/Scan/扫描工具 WeblogicScanner.md
     - Windows:
-      - 扫描工具 CVE-2020-0796: 漏洞复现/操作系统漏洞/Windows/Scan/扫描工具 CVE-2020-0796.md
+      - 扫描工具 CVE-2020-0796: 安全工具/Windows/Scan/扫描工具 CVE-2020-0796.md
+  
+  - 内网渗透:
+    - 相关介绍: 内网渗透/README.md
+    - Windows提权:
+      - 权限提升分析及防御一: 内网渗透/Windows提权/权限提升分析及防御一.md
+      - 权限提升分析及防御二: 内网渗透/Windows提权/权限提升分析及防御二.md
